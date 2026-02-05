@@ -1,8 +1,8 @@
 <?php 
-require_once '../includes/auth.php';
-require_once '../config/db.php';
-include '../includes/header.php';
-include '../includes/sidebar.php';
+require_once '../../includes/auth.php';
+require_once '../../config/db.php';
+include '../../includes/header.php';
+include '../../includes/sidebar.php';
 
 // Handle Actions
 $message = '';
@@ -320,4 +320,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

@@ -1,10 +1,10 @@
 <?php
-require_once '../includes/auth.php';
-require_once '../config/db.php';
+require_once '../../includes/auth.php';
+require_once '../../config/db.php';
 
 // Ensure user is logged in
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
+    header("Location: " . BASE_URL . "pages/auth/login.php");
     exit();
 }
 
@@ -13,7 +13,7 @@ $cargo_nombre = $_SESSION['cargo_nombre'] ?? '';
 
 // If no worker linked, show error
 if (!$trabajador_id) {
-    die('<div class="container mt-5"><div class="alert alert-danger">Acceso denegado. No hay perfil de trabajador asociado a su cuenta de usuario. Contacte al administrador. <a href="logout.php">Cerrar Sesión</a></div></div>');
+    die('<div class="container mt-5"><div class="alert alert-danger">Acceso denegado. No hay perfil de trabajador asociado a su cuenta de usuario. Contacte al administrador. <a href="' . BASE_URL . 'pages/auth/logout.php">Cerrar Sesión</a></div></div>');
 }
 
 $message = '';
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['registrar_ruta'])) {
     // Handle Image Upload
     $foto_path = '';
     if (isset($_FILES['foto_tablero']) && $_FILES['foto_tablero']['error'] == 0) {
-        $target_dir = "../assets/uploads/tableros/";
+        $target_dir = "../../assets/uploads/tableros/";
         if (!file_exists($target_dir)) {
             mkdir($target_dir, 0777, true);
         }
@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['registrar_devolucion']
         $decoded_image = base64_decode($encoded_image);
         
         $filename = "firma_" . time() . "_" . $trabajador_id . ".png";
-        $target_file = "../assets/uploads/firmas/" . $filename;
+        $target_file = "../../assets/uploads/firmas/" . $filename;
         
         if (file_put_contents($target_file, $decoded_image)) {
             $firma_path = "assets/uploads/firmas/" . $filename;

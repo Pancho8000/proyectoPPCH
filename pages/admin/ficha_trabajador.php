@@ -1,8 +1,8 @@
 <?php
-require_once '../includes/auth.php';
-require_once '../config/db.php';
-include '../includes/header.php';
-include '../includes/sidebar.php';
+require_once '../../includes/auth.php';
+require_once '../../config/db.php';
+include '../../includes/header.php';
+include '../../includes/sidebar.php';
 
 // Get ID
 $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
@@ -632,4 +632,4 @@ function detectDateFromDoc() {
 }
 </script>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

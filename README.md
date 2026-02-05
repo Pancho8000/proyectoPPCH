@@ -1,44 +1,21 @@
-# proyectoPPCH
-PPCH - Sistema de Gestión de Recursos y Flota
+# Proyecto HECSO
 
+Sistema de Gestión de Trabajadores y Flota.
 
-# Sistema de Gestión - HECSO
+## Descripción
+Este sistema permite gestionar trabajadores, vehículos, mantenciones, combustible y documentos de la empresa HECSO.
 
-Plataforma web para la gestión de trabajadores, flota vehicular y control de rutas.
+## Instalación
+1. Clonar el repositorio.
+2. Configurar la base de datos en `config/db.php`.
+3. Importar el archivo SQL de la base de datos.
 
-## 🔒 Confidencialidad
-Este software es propiedad exclusiva de HECSO. Su acceso, distribución y modificación están restringidos al personal autorizado. Contiene información sensible protegida por acuerdos de confidencialidad.
+## Estructura del Proyecto
+- `pages/`: Contiene las páginas del sistema (admin, worker, auth).
+- `includes/`: Archivos compartidos (header, sidebar, footer, auth).
+- `config/`: Configuración de la base de datos.
+- `assets/`: Archivos estáticos (CSS, JS, imágenes).
+- `scripts/`: Scripts auxiliares.
 
-## 📋 Requisitos Previos
-*   PHP 8.0 o superior
-*   MySQL / MariaDB
-*   Composer (Gestor de dependencias)
-*   Tesseract OCR (Para lectura de documentos)
-
-## 🚀 Instalación (Entorno Local)
-
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone https://github.com/usuario/repo-hecso.git
-    ```
-
-2.  **Instalar dependencias:**
-    ```bash
-    composer install
-    ```
-
-3.  **Configurar base de datos:**
-    *   Crear una base de datos vacía.
-    *   Importar el archivo `scripts/database.sql`.
-    *   Crear el archivo `config/db.php` basado en el ejemplo y configurar las credenciales.
-
-4.  **Configurar permisos:**
-    *   Asegurar permisos de escritura en la carpeta `assets/uploads/`.
-
-## 🛠 Funcionalidades Principales
-*   **Portal Trabajador:** Versión móvil para registro de rutas y firmas.
-*   **Gestión Documental:** Lectura automática de PDFs y control de vencimientos.
-*   **Flota:** Control de vehículos, mantenciones y combustible.
-
-## 📞 Soporte
-Para problemas técnicos o accesos, contactar al departamento de TI o al administrador del sistema.
+## Confidencialidad
+Este proyecto contiene información confidencial. No compartir sin autorización.

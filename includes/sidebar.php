@@ -34,7 +34,7 @@ function isActive($link_page, $current_page) {
             </div>
             <h6 class="text-white mb-1"><?php echo isset($_SESSION['user_name']) ? htmlspecialchars($_SESSION['user_name']) : 'Admin'; ?></h6>
             <small class="text-muted mb-3">Admin</small>
-            <a href="<?php echo BASE_URL; ?>pages/logout.php" class="btn btn-outline-danger btn-sm rounded-pill px-3">
+            <a href="<?php echo BASE_URL; ?>pages/auth/logout.php" class="btn btn-outline-danger btn-sm rounded-pill px-3">
                 <i class="fas fa-sign-out-alt me-1"></i> Cerrar Sesión
             </a>
         </div>
@@ -44,43 +44,43 @@ function isActive($link_page, $current_page) {
 
     <div class="list-group list-group-flush flex-grow-1">
         <div class="sidebar-heading mt-2">Principal</div>
-        <a href="<?php echo BASE_URL; ?>pages/dashboard.php" class="nav-link <?php echo isActive('dashboard.php', $current_page); ?>">
+        <a href="<?php echo BASE_URL; ?>pages/admin/dashboard.php" class="nav-link <?php echo isActive('dashboard.php', $current_page); ?>">
             <i class="fas fa-tachometer-alt"></i> Dashboard
         </a>
-        <a href="<?php echo BASE_URL; ?>pages/calendario.php" class="nav-link <?php echo isActive('calendario.php', $current_page); ?>">
+        <a href="<?php echo BASE_URL; ?>pages/admin/calendario.php" class="nav-link <?php echo isActive('calendario.php', $current_page); ?>">
             <i class="fas fa-calendar-alt"></i> Calendario
         </a>
 
         <div class="sidebar-heading mt-3">Gestión</div>
-        <a href="<?php echo BASE_URL; ?>pages/trabajadores.php" class="nav-link <?php echo isActive('trabajadores.php', $current_page); ?>">
+        <a href="<?php echo BASE_URL; ?>pages/admin/trabajadores.php" class="nav-link <?php echo isActive('trabajadores.php', $current_page); ?>">
             <i class="fas fa-users"></i> Trabajadores
         </a>
-        <a href="<?php echo BASE_URL; ?>pages/vehiculos.php" class="nav-link <?php echo isActive('vehiculos.php', $current_page); ?>">
+        <a href="<?php echo BASE_URL; ?>pages/admin/vehiculos.php" class="nav-link <?php echo isActive('vehiculos.php', $current_page); ?>">
             <i class="fas fa-truck"></i> Vehículos
         </a>
-        <a href="<?php echo BASE_URL; ?>pages/mantenciones.php" class="nav-link <?php echo isActive('mantenciones.php', $current_page); ?>">
+        <a href="<?php echo BASE_URL; ?>pages/admin/mantenciones.php" class="nav-link <?php echo isActive('mantenciones.php', $current_page); ?>">
             <i class="fas fa-tools"></i> Mantenciones
         </a>
-        <a href="<?php echo BASE_URL; ?>pages/combustible.php" class="nav-link <?php echo isActive('combustible.php', $current_page); ?>">
+        <a href="<?php echo BASE_URL; ?>pages/admin/combustible.php" class="nav-link <?php echo isActive('combustible.php', $current_page); ?>">
             <i class="fas fa-gas-pump"></i> Combustible
         </a>
 
         <div class="sidebar-heading mt-3">Sistema</div>
-        <a href="<?php echo BASE_URL; ?>pages/bitacora.php" class="nav-link <?php echo isActive('bitacora.php', $current_page); ?>">
+        <a href="<?php echo BASE_URL; ?>pages/admin/bitacora.php" class="nav-link <?php echo isActive('bitacora.php', $current_page); ?>">
             <i class="fas fa-clock"></i> Bitácora
         </a>
-        <a href="<?php echo BASE_URL; ?>pages/documentos_generales.php" class="nav-link <?php echo isActive('documentos_generales.php', $current_page); ?>">
+        <a href="<?php echo BASE_URL; ?>pages/admin/documentos_generales.php" class="nav-link <?php echo isActive('documentos_generales.php', $current_page); ?>">
             <i class="fas fa-file-alt"></i> Certificados Gral.
         </a>
-        <a href="<?php echo BASE_URL; ?>pages/carga_masiva_docs.php" class="nav-link <?php echo isActive('carga_masiva_docs.php', $current_page); ?>">
+        <a href="<?php echo BASE_URL; ?>pages/admin/carga_masiva_docs.php" class="nav-link <?php echo isActive('carga_masiva_docs.php', $current_page); ?>">
             <i class="fas fa-upload"></i> Carga Masiva
         </a>
 
         <div class="sidebar-heading mt-3">Configuración</div>
-        <a href="<?php echo BASE_URL; ?>pages/usuarios.php" class="nav-link <?php echo isActive('usuarios.php', $current_page); ?>">
+        <a href="<?php echo BASE_URL; ?>pages/admin/usuarios.php" class="nav-link <?php echo isActive('usuarios.php', $current_page); ?>">
             <i class="fas fa-cog"></i> Usuarios de Sistema
         </a>
-        <a href="<?php echo BASE_URL; ?>pages/roles_cargos.php" class="nav-link <?php echo isActive('roles_cargos.php', $current_page); ?>">
+        <a href="<?php echo BASE_URL; ?>pages/admin/roles_cargos.php" class="nav-link <?php echo isActive('roles_cargos.php', $current_page); ?>">
             <i class="fas fa-tags"></i> Roles y Cargos
         </a>
     </div>

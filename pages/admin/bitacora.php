@@ -29,8 +29,8 @@ $sql = "SELECT b.*, u.nombre as usuario_nombre, r.nombre as rol_nombre
         LIMIT $start, $limit";
 $logs = $conn->query($sql);
 
-include '../includes/header.php'; 
-include '../includes/sidebar.php'; 
+include '../../includes/header.php'; 
+include '../../includes/sidebar.php'; 
 ?>
 
 <div class="d-flex justify-content-between align-items-center mb-4">
@@ -162,4 +162,4 @@ include '../includes/sidebar.php';
     </div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

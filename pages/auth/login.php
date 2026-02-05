@@ -1,10 +1,10 @@
 <?php
 session_start();
-require_once '../config/db.php';
+require_once '../../config/db.php';
 
 // If already logged in, redirect to dashboard
 if (isset($_SESSION['user_id'])) {
-    header("Location: dashboard.php");
+    header("Location: " . BASE_URL . "pages/admin/dashboard.php");
     exit();
 }
 
@@ -48,9 +48,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Redirect based on role or worker status
             // Assuming role_id 1 is Admin
             if ($user['rol_id'] == 1) {
-                header("Location: dashboard.php");
+                header("Location: " . BASE_URL . "pages/admin/dashboard.php");
             } else {
-                header("Location: portal_trabajador.php");
+                header("Location: " . BASE_URL . "pages/worker/portal_trabajador.php");
             }
             exit();
         } else {

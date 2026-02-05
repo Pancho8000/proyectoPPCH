@@ -1,7 +1,7 @@
 <?php
-require_once '../includes/auth.php';
-require_once '../config/db.php';
-require_once '../includes/header.php';
+require_once '../../includes/auth.php';
+require_once '../../config/db.php';
+require_once '../../includes/header.php';
 
 // Fetch Workers for JS lookup
 $workers = [];
@@ -100,4 +100,4 @@ $vehicleDocTypes = [
 <!-- Logic -->
 <script src="../assets/js/bulk_upload.js"></script>
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once '../../includes/footer.php'; ?>

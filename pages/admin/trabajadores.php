@@ -1,8 +1,8 @@
 <?php 
-require_once '../includes/auth.php';
-require_once '../config/db.php';
-include '../includes/header.php';
-include '../includes/sidebar.php';
+require_once '../../includes/auth.php';
+require_once '../../config/db.php';
+include '../../includes/header.php';
+include '../../includes/sidebar.php';
 
 // Handle Actions
 $message = '';
@@ -781,4 +781,4 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 </script>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

@@ -1,6 +1,6 @@
 <?php 
-require_once '../includes/auth.php';
-require_once '../config/db.php';
+require_once '../../includes/auth.php';
+require_once '../../config/db.php';
 
 // Get current folder ID
 $current_folder_id = isset($_GET['folder']) ? intval($_GET['folder']) : null;
@@ -351,4 +351,4 @@ function deleteItem(id, type) {
 }
 </style>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>

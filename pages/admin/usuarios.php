@@ -1,6 +1,6 @@
 <?php 
-require_once '../includes/auth.php';
-require_once '../config/db.php';
+require_once '../../includes/auth.php';
+require_once '../../config/db.php';
 
 // Handle Actions
 $message = '';
@@ -323,7 +323,7 @@ while($w = $workers->fetch_assoc()) {
     </div>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include '../../includes/footer.php'; ?>
 
 <script>
 // Initialize Modal

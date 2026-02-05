@@ -1,0 +1,9 @@
+config/db.php
+.env
+vendor/
+assets/uploads/
+uploads/
+*.log
+error_log
+.DS_Store
+Thumbs.db
